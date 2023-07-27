@@ -1,5 +1,5 @@
 package recursion;
-/**
+/*
  * Define function with single args accept integer & return type int 
  * Define Base Condition as num=1 or num=0 to make recursion finite 
  * Return 1 value once condition 
