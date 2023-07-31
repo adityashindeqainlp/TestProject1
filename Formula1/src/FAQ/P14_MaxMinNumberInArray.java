@@ -9,7 +9,7 @@ public class P14_MaxMinNumberInArray {
 
 		for (int i = 0; i < a.length; i++) {
 
-			for (int j = 0; j < a.length; j++) {
+			for (int j = i + 1; j < a.length; j++) {
 
 				if (a[i] > a[j]) {
 					temp = a[i];
@@ -20,8 +20,8 @@ public class P14_MaxMinNumberInArray {
 			}
 		}
 
-		System.out.println("Maximum Value in Array : " + a[0]);
-		System.out.println("Minimum Value in Array : " + a[11]);
+		System.out.println("Minimium Value in Array : " + a[0]);
+		System.out.println("Maximum Value in Array : " + a[11]);
 	}
 
 }
