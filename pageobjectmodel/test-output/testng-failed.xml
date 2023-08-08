@@ -5,12 +5,10 @@
     <classes>
       <class name="testjava.LoginTest">
         <methods>
-          <include name="validateLoginUsingValidCred"/>
           <include name="pageObjects"/>
+          <include name="validateLoginUsingInvalidCred"/>
           <include name="launchingBrowser"/>
-          <include name="validateUrlOfPage"/>
           <include name="tearDown"/>
-          <include name="validateTitleOfPage"/>
         </methods>
       </class> <!-- testjava.LoginTest -->
     </classes>

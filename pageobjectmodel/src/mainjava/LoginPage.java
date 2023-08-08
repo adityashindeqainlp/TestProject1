@@ -85,6 +85,19 @@ public class LoginPage extends BaseTest {
 
 	}
 	
-	//public void 
+
+	public String loginFunctionaityInvalidCred(String username, String password) {
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		userName.sendKeys(username);
+		passWord.sendKeys(password);
+		submitBtn.click();
+		boolean errorHandlingCoverage = errorMessage.isDisplayed();
+		Assert.assertTrue(errorHandlingCoverage);
+		String errorMsg = errorMessage.getText();
+		return errorMsg;
+
+	}
+	
 
 }

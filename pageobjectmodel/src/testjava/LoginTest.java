@@ -32,6 +32,10 @@ public class LoginTest extends BaseTest {
 	@Test(priority = 3)
 	public void validateLoginUsingInvalidCred() {
 		
+		loginPage.loginFunctionaityInvalidCred("Admin123", "admin12345");
+		System.out.println(loginPage.loginFunctionaityInvalidCred("Admin123", "admin12345"));
+		dashBoard.verifyTitleOfPage();
+		dashBoard.logout();
 		
 	}
 	
