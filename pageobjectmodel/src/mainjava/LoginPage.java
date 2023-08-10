@@ -27,7 +27,7 @@ public class LoginPage extends BaseTest {
 	WebElement submitBtn;
 
 	@FindBy(xpath = "//p[@class='oxd-text oxd-text--p orangehrm-login-forgot-header']")
-	WebElement forgotPsswordLink;
+	WebElement forgotPasswordLink;
 
 	@FindBy(xpath = "//a[normalize-space()='OrangeHRM, Inc']")
 	WebElement orenageHRMIncLink;
@@ -43,8 +43,8 @@ public class LoginPage extends BaseTest {
 
 	@FindBy(xpath = "(//*[name()='svg'][@role='presentation'])[4]")
 	WebElement youTubeBtn;
-	
-	@FindBy(xpath="//div[@class='oxd-alert-content oxd-alert-content--error']")
+
+	@FindBy(xpath = "//div[@class='oxd-alert-content oxd-alert-content--error']")
 	WebElement errorMessage;
 
 	public LoginPage(WebDriver driver) {
@@ -84,7 +84,6 @@ public class LoginPage extends BaseTest {
 		submitBtn.click();
 
 	}
-	
 
 	public String loginFunctionaityInvalidCred(String username, String password) {
 
@@ -98,6 +97,35 @@ public class LoginPage extends BaseTest {
 		return errorMsg;
 
 	}
-	
 
+	public void validateForgetPasswordLink() {
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		boolean check1 = forgotPasswordLink.isDisplayed();
+		boolean check2 = forgotPasswordLink.isEnabled();
+
+		if (check1 == true && check2 == true) {
+
+			forgotPasswordLink.click();
+		}
+	}
+
+	public void validateOrangeHRMLink() {
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		boolean check1 = orenageHRMIncLink.isDisplayed();
+		boolean check2 = orenageHRMIncLink.isEnabled();
+
+		if (check1 == true && check2 == true) {
+
+			orenageHRMIncLink.click();
+		}
+	}
+
+	
+	
+	
+	
+	
+	
 }

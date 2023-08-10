@@ -1,39 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
     </line>
+    <line>
+      <![CDATA[Reset Password]]>
+    </line>
+    <line>
+      <![CDATA[OrangeHRM HR Software | Free & Open Source HR Software | HRMS | HRIS | OrangeHRM]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-08-08T09:26:35 GMT-04:00" name="Default suite" finished-at="2023-08-08T09:26:52 GMT-04:00" duration-ms="17633">
+  <suite started-at="2023-08-09T15:24:13 GMT-04:00" name="Default suite" finished-at="2023-08-09T15:24:49 GMT-04:00" duration-ms="35841">
     <groups>
     </groups>
-    <test started-at="2023-08-08T09:26:35 GMT-04:00" name="Default test" finished-at="2023-08-08T09:26:52 GMT-04:00" duration-ms="17633">
+    <test started-at="2023-08-09T15:24:13 GMT-04:00" name="Default test" finished-at="2023-08-09T15:24:49 GMT-04:00" duration-ms="35841">
       <class name="testjava.LoginTest">
-        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:testjava.LoginTest@7f485fda]" started-at="2023-08-08T09:26:27 GMT-04:00" name="launchingBrowser" finished-at="2023-08-08T09:26:35 GMT-04:00" duration-ms="8224" status="PASS">
+        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:testjava.LoginTest@d737b89]" started-at="2023-08-09T15:24:02 GMT-04:00" name="launchingBrowser" finished-at="2023-08-09T15:24:13 GMT-04:00" duration-ms="10946" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchingBrowser -->
-        <test-method is-config="true" signature="pageObjects()[pri:0, instance:testjava.LoginTest@7f485fda]" started-at="2023-08-08T09:26:35 GMT-04:00" name="pageObjects" finished-at="2023-08-08T09:26:35 GMT-04:00" duration-ms="21" status="PASS">
+        <test-method is-config="true" signature="pageObjects()[pri:0, instance:testjava.LoginTest@d737b89]" started-at="2023-08-09T15:24:13 GMT-04:00" name="pageObjects" finished-at="2023-08-09T15:24:13 GMT-04:00" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObjects -->
-        <test-method signature="validateUrlOfPage()[pri:0, instance:testjava.LoginTest@7f485fda]" started-at="2023-08-08T09:26:35 GMT-04:00" name="validateUrlOfPage" finished-at="2023-08-08T09:26:35 GMT-04:00" duration-ms="19" status="PASS">
+        <test-method signature="validateUrlOfPage()[pri:0, instance:testjava.LoginTest@d737b89]" started-at="2023-08-09T15:24:13 GMT-04:00" name="validateUrlOfPage" finished-at="2023-08-09T15:24:13 GMT-04:00" duration-ms="16" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
             </line>
           </reporter-output>
         </test-method> <!-- validateUrlOfPage -->
-        <test-method signature="validateTitleOfPage()[pri:1, instance:testjava.LoginTest@7f485fda]" started-at="2023-08-08T09:26:35 GMT-04:00" name="validateTitleOfPage" finished-at="2023-08-08T09:26:35 GMT-04:00" duration-ms="11" status="PASS">
+        <test-method signature="validateTitleOfPage()[pri:1, instance:testjava.LoginTest@d737b89]" started-at="2023-08-09T15:24:13 GMT-04:00" name="validateTitleOfPage" finished-at="2023-08-09T15:24:13 GMT-04:00" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitleOfPage -->
-        <test-method signature="validateLoginUsingValidCred()[pri:2, instance:testjava.LoginTest@7f485fda]" started-at="2023-08-08T09:26:35 GMT-04:00" name="validateLoginUsingValidCred" finished-at="2023-08-08T09:26:39 GMT-04:00" duration-ms="4454" status="PASS">
+        <test-method signature="validateLoginUsingValidCred()[pri:2, instance:testjava.LoginTest@d737b89]" started-at="2023-08-09T15:24:13 GMT-04:00" name="validateLoginUsingValidCred" finished-at="2023-08-09T15:24:18 GMT-04:00" duration-ms="4857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginUsingValidCred -->
-        <test-method signature="validateLoginUsingInvalidCred()[pri:3, instance:testjava.LoginTest@7f485fda]" started-at="2023-08-08T09:26:39 GMT-04:00" name="validateLoginUsingInvalidCred" finished-at="2023-08-08T09:26:52 GMT-04:00" duration-ms="13072" status="FAIL">
+        <test-method signature="validateLoginUsingInvalidCred()[pri:3, instance:testjava.LoginTest@d737b89]" started-at="2023-08-09T15:24:18 GMT-04:00" name="validateLoginUsingInvalidCred" finished-at="2023-08-09T15:24:32 GMT-04:00" duration-ms="13483" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h6[text()='Dashboard']"}
@@ -42,9 +48,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1396546c8d62848d16116885bf07b41b, findElement {using=xpath, value=//h6[text()='Dashboard']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57482}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57482/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1396546c8d62848d16116885bf07b41b]]>
+Command: [2262db067abc3e34257a8d47a5243275, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54090/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2262db067abc3e34257a8d47a5243275]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[text()='Dashboard']"}
@@ -53,9 +59,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1396546c8d62848d16116885bf07b41b, findElement {using=xpath, value=//h6[text()='Dashboard']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57482}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57482/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1396546c8d62848d16116885bf07b41b
+Command: [2262db067abc3e34257a8d47a5243275, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54090/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2262db067abc3e34257a8d47a5243275
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -111,7 +117,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginUsingInvalidCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testjava.LoginTest@7f485fda]" started-at="2023-08-08T09:26:53 GMT-04:00" name="tearDown" finished-at="2023-08-08T09:26:53 GMT-04:00" duration-ms="615" status="PASS">
+        <test-method signature="validateForgotPasswordLink()[pri:4, instance:testjava.LoginTest@d737b89]" started-at="2023-08-09T15:24:32 GMT-04:00" name="validateForgotPasswordLink" finished-at="2023-08-09T15:24:33 GMT-04:00" duration-ms="1650" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Reset Password]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateForgotPasswordLink -->
+        <test-method signature="validateOrangeHRMLink()[pri:5, instance:testjava.LoginTest@d737b89]" started-at="2023-08-09T15:24:33 GMT-04:00" name="validateOrangeHRMLink" finished-at="2023-08-09T15:24:49 GMT-04:00" duration-ms="15746" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[OrangeHRM HR Software | Free & Open Source HR Software | HRMS | HRIS | OrangeHRM]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateOrangeHRMLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testjava.LoginTest@d737b89]" started-at="2023-08-09T15:24:50 GMT-04:00" name="tearDown" finished-at="2023-08-09T15:24:53 GMT-04:00" duration-ms="3061" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

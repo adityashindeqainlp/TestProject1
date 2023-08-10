@@ -7,4 +7,6 @@ public class Base {
 	protected  WebDriver driver;
 	protected LoginPage loginPage;
 	protected DashBoardPage dashBoard;
+	protected ForgetPasswordPage forgetPassword;
+	protected OrangeHrmLinkPage orangeHrmLink;
 }

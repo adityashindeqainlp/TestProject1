@@ -11,7 +11,9 @@ import org.testng.annotations.BeforeSuite;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import mainjava.Base;
 import mainjava.DashBoardPage;
+import mainjava.ForgetPasswordPage;
 import mainjava.LoginPage;
+import mainjava.OrangeHrmLinkPage;
 
 public class BaseTest extends Base {
 
@@ -31,7 +33,8 @@ public class BaseTest extends Base {
 		
 		loginPage = new LoginPage(driver);
 		dashBoard = new DashBoardPage(driver);
-		
+		forgetPassword = new ForgetPasswordPage(driver);
+		orangeHrmLink = new OrangeHrmLinkPage(driver);
 	}
 
 	@AfterSuite
