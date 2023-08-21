@@ -21,7 +21,7 @@ class m2 {
 	 * If we apply final keyword with variable then it will only load the variable 
 	 * If we remove final keyword it will load the class m2 
 	 * */
-	public  static int a = 1000;
+	public final static int a = 1000;
 
 	
 	// Once remove the final keyword then it will load the static block first 
